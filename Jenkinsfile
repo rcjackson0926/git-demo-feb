@@ -8,6 +8,11 @@ stages {
                 sh 'cat demo.txt'
             }
         }
+    stage('Read Readme.md file') {
+            steps {
+                sh 'README.md'
+            }
+        }
 
 }
 
