@@ -1,0 +1,10 @@
+pipeline {
+    agent{node{label 'master'}}
+    stages{
+        stage('Read Demo File'){
+            steps {
+                cat demo.txt
+            }
+        }
+    }
+}
